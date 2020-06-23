@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #F6F6F6;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background: #145FE1;
+    color: #FFFFFF
+}
+nav h1{
+    background: #145FE1;
+}
+
+.nav-button{
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    font-size: 25px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-button:hover{
+    background: #82E87B;
+}
+
+.big-text{
+    font-size: 50px;
+}
+
+.big-text2{
+    font-size: 40px;
+}
+
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.projects img{
+    width: 745px;
+    height: 420px;
+}
+
+.project-item *{
+    background: #FFFFFF;
+}
+
+.project-item{
+    max-width: 745px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+.btn-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.project-btn{
+    background: #82E87B;
+    border: 2px solid #000000;
+    font-size: 25px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.code-btn{
+    background: #ABCAFF;
+    border: 2px solid #000000;
+    font-size: 25px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.project-btn i{
+    background: #82E87B;
+}
+
+.code-btn i{
+    background: #ABCAFF;
+}
+
+.test-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.skills {
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills div{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.big-text3{
+    font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+    .nav-button{
+        font-size: 15px;
+        width: 65px;
+    }
+    nav h1{
+        font-size: 15px;
+    }
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    .projects img{
+        width: 302px;
+        height: 170px;
+    }
+    .project-item button{
+        font-size: 15px;
+        width: 100px;
+    }
+    .project-item{
+        max-width: 302px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .skills {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .big-text{
+        font-size: 20px;
+    }
+    .big-text3{
+        font-size: 12px;
+    }
+}
